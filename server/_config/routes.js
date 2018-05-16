@@ -106,4 +106,9 @@ module.exports = function(server) {
         res.status(500).json(err);
       });
   });
+
+  server.get("/logout", function(req, res) {
+    req.logout();
+    res.redirect("/");
+  });
 };
