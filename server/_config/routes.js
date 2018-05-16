@@ -109,6 +109,6 @@ module.exports = function(server) {
 
   server.get("/logout", function(req, res) {
     req.logout();
-    res.redirect("/");
+    res.redirect("Logged out");
   });
 };
